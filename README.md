@@ -1,39 +1,50 @@
-Description:
-A single-page application (SPA) built with React, showcasing a structured layout with a navigation bar, hero section, about section, features, story, contact, and a footer.
+# Avenex · Animated Landing Page
 
-Key Features:
-Responsive design using CSS frameworks like Tailwind CSS.
-Smooth animations and transitions using GSAP (GreenSock Animation Platform).
-Utilizes React hooks and context for state management.
-Integrates with popular SVG icons using react-icons.
+A responsive single-page experience built around video, typography, and scroll-driven motion. The project explores how React components and GSAP timelines can create a cohesive visual narrative.
 
+**React 19 · Vite · GSAP · Tailwind CSS**
 
-Technologies Used:
-React: A popular JavaScript library for building user interfaces.
-GSAP: A popular animation library used for creating smooth animations and transitions.
-Tailwind CSS: A utility-first CSS framework that allows you to build modern websites without ever leaving your HTML.
-react-icons: A popular library for using SVG icons in React applications.
-react-use: A popular React utility belt that helps you write less code and build more powerful components.
+[Live demo](https://avenex.vercel.app/) · [Portfolio](https://github.com/kuvlay)
 
-Getting Started:
+## What is implemented
 
-1.Clone the repository:
-git clone https://github.com/your-username/awards.git
-Apply
-Replace your-username with your GitHub username.
+- A video hero with interactive preview transitions.
+- Scroll-triggered animations and animated section titles.
+- Responsive navigation and reusable buttons.
+- About, feature, story, contact, and footer sections.
+- Local image, video, audio, and font assets.
 
-2.Install dependencies:
-npm install
-Apply
+## Run locally
 
-3.Start the development server:
-npm start
-Apply
-The application will be available at http://localhost:3000 in your default browser.
+With Node.js and npm installed:
 
+```bash
+git clone https://github.com/kuvlay/Avenex.git
+cd Avenex
+npm ci
+npm run dev
+```
 
-Project Structure:
-public: Contains static assets like images, audio, and videos.
-src: Contains the main source code files.
-App.jsx: The main JavaScript file for the application.
-components: A subdirectory containing various reusable UI components.
+Open the local address printed by Vite. No environment variables or backend services are required by the current source.
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Generate the production frontend bundle |
+| `npm run preview` | Preview the built bundle locally |
+| `npm run lint` | Run the configured ESLint checks |
+
+## Project structure
+
+`src/App.jsx` composes the page. `src/components/` contains the section and interaction components; `public/` holds media assets.
+
+## Scope and status
+
+This is a frontend interaction study. Contact and promotional controls are presentation elements; no account system, checkout, or message-submission backend is implemented. The existing demo returned a successful HTTP response during review. A fresh local build and interaction/accessibility checks have not been run as part of this documentation update.
+
+<details>
+<summary>Credits and project history</summary>
+
+Source lineage: [aarish-io/Avenex](https://github.com/aarish-io/Avenex). Original contributor history and asset files are retained. No standalone license was present in the reviewed source.
+
+</details>
